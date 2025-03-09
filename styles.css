@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Top Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.logo img {
+    width: 120px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 250px;
+    padding: 8px;
+    border: 2px solid gold;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background: gold;
+    border: none;
+    padding: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.favorites {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Navigation Menu */
+nav {
+    background: black;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 50px;
+}
+
+nav ul li a {
+    color: gold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    margin: 50px auto;
+    width: 80%;
+}
+
+h2 {
+    font-size: 28px;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+/* Pinterest Section */
+.pinterest-frame {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.grid img {
+    width: 100%;
+    height: 300px; /* Ensures all images are the same size */
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+.pinterest-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.pinterest-image:hover {
+    transform: scale(1.05);
+}
+
